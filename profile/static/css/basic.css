@@ -11,16 +11,6 @@
 }
 
 @font-face {
-    font-family: "FFF Ultra";
-    src: url("https://db.onlinewebfonts.com/t/8684610baea10a063f01a809b20384b5.eot");
-    src: url("https://db.onlinewebfonts.com/t/8684610baea10a063f01a809b20384b5.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/8684610baea10a063f01a809b20384b5.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/8684610baea10a063f01a809b20384b5.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/8684610baea10a063f01a809b20384b5.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/8684610baea10a063f01a809b20384b5.svg#FFF Ultra")format("svg");
-}
-
-@font-face {
     font-family: "F888 Ultra";
     src: url("https://db.onlinewebfonts.com/t/9e01275f912bf59b149043c7ff52bb9d.eot");
     src: url("https://db.onlinewebfonts.com/t/9e01275f912bf59b149043c7ff52bb9d.eot?#iefix")format("embedded-opentype"),
@@ -28,6 +18,16 @@
     url("https://db.onlinewebfonts.com/t/9e01275f912bf59b149043c7ff52bb9d.woff")format("woff"),
     url("https://db.onlinewebfonts.com/t/9e01275f912bf59b149043c7ff52bb9d.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/9e01275f912bf59b149043c7ff52bb9d.svg#F888 Ultra")format("svg");
+}
+
+@font-face {
+    font-family: "Cronos Pro";
+    src: url("https://db.onlinewebfonts.com/t/a059538dbb553b4978607a6366a9653b.eot");
+    src: url("https://db.onlinewebfonts.com/t/a059538dbb553b4978607a6366a9653b.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/a059538dbb553b4978607a6366a9653b.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/a059538dbb553b4978607a6366a9653b.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/a059538dbb553b4978607a6366a9653b.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/a059538dbb553b4978607a6366a9653b.svg#Cronos Pro")format("svg");
 }
 
 @font-face {
@@ -39,6 +39,7 @@
     url("https://db.onlinewebfonts.com/t/7e29dcdc678124f6e52d4e46a4f89b63.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/7e29dcdc678124f6e52d4e46a4f89b63.svg#Cronos Pro Caption")format("svg");
 }
+
 
 body {
     margin: 0;
@@ -263,7 +264,7 @@ body {
     z-index: 1; /* Ensure it’s on top */
 }
 
-.heading {
+.heading-large {
     font-family: 'F888 Ultra', sans-serif; /* Use custom font */
     font-size: 160px;
     font-weight: 900; /* Bold weight */
@@ -276,6 +277,19 @@ body {
     margin-bottom: 80px; /* Space below the heading */
 }
 
+.heading-normal {
+    font-family: 'F888 Ultra', sans-serif; /* Use custom font */
+    font-size: 80px;
+    font-weight: 500; /* Bold weight */
+    top: 20px;
+    overflow: hidden;
+    align-items: center;
+    transition: opacity 0.3s ease;
+    width: 80vw;
+    margin-top: 30px; /* Space below the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
 .contact-table {
     width: 60vw;
     margin: 0 auto; /* Center the table */
@@ -284,7 +298,7 @@ body {
 
 .contact-table td {
     font-family: 'Cronos Pro Caption', sans-serif; /* Use custom font */
-    font-size: 30px; /* Adjust size as needed */
+    font-size: 40px; /* Adjust size as needed */
     text-align: left; /* Align text to the left */
     height: 100px;
     transition: transform 0.3s ease; /* Smooth transition for the magnification */
@@ -299,5 +313,48 @@ body {
 .logo {
     height: 50px; /* Adjust logo size */
     width: auto; /* Maintain aspect ratio */
-    transform-origin: center center; /* Set the origin to center left */
+}
+
+.research-table {
+    width: 70vw;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-collapse: collapse; /* Remove gaps between cells */
+}
+
+.research-table td {
+    font-family: 'Cronos Pro Caption', sans-serif; /* Use custom font */
+    font-size: 50px; /* Adjust size as needed */
+    text-align: left; /* Align text to the left */
+    height: 100px;
+    transition: transform 0.3s ease; /* Smooth transition for the magnification */
+    transform-origin: center left; /* Set the origin to center left */
+    padding: 20px; /* Add some padding for better spacing */
+}
+
+.research-table td:hover {
+    transform: scale(1.1); /* Scale up the cell on hover */
+    z-index: 1; /* Bring the hovered cell to the front */
+}
+ 
+.hobbies-table {
+    width: 70vw;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-collapse: collapse; /* Remove gaps between cells */
+}
+
+.hobbies-table td {
+    font-family: 'Cronos Pro Caption', sans-serif; /* Use custom font */
+    font-size: 50px; /* Adjust size as needed */
+    text-align: left; /* Align text to the left */
+    height: 100px;
+    transition: transform 0.3s ease; /* Smooth transition for the magnification */
+    transform-origin: center left; /* Set the origin to center left */
+    padding: 20px; /* Add some padding for better spacing */
+}
+
+.hobbies-table td:hover {
+    transform: scale(1.1); /* Scale up the cell on hover */
+    z-index: 1; /* Bring the hovered cell to the front */
 }

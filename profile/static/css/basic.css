@@ -287,6 +287,13 @@ body {
     font-size: 30px; /* Adjust size as needed */
     text-align: left; /* Align text to the left */
     height: 100px;
+    transition: transform 0.3s ease; /* Smooth transition for the magnification */
+}
+
+.contact-table td:hover {
+    transform: scale(1.2); /* Scale up the cell on hover */
+    z-index: 1; /* Bring the hovered cell to the front */
+    background-color: rgba(0, 123, 255, 0.2); /* Optional: change background color on hover */
 }
 
 .logo {

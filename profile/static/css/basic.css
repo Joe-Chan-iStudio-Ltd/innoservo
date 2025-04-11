@@ -358,3 +358,8 @@ body {
     transform: scale(1.1); /* Scale up the cell on hover */
     z-index: 1; /* Bring the hovered cell to the front */
 }
+
+.bold-heading-grey {
+    font-family: 'F888 Ultra', sans-serif; 
+    opacity: 0.5;
+}

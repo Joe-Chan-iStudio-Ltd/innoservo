@@ -299,4 +299,5 @@ body {
 .logo {
     height: 50px; /* Adjust logo size */
     width: auto; /* Maintain aspect ratio */
+    transform-origin: center center; /* Set the origin to center left */
 }

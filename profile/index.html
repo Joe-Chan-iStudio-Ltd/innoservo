@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="static/css/basic.css">
+    <script type="text/javascript" src="static/js/profile.js"></script>
+</head>
+<body>
+    <div class="container sequoia-sunrise">
+        <div class="name-container" onmouseover="showExperience()" onmouseout="hideExperience()">
+            <div class="name">
+                King Cheung<br/>Joe CHAN
+            </div>
+            <div class="experience" style="display: none;">
+                <img src="static/png/fullstack.png" alt="Full Stack" class="white-logo" />
+                Over 20 years in<br/>
+                IT Full Stack Development<br/>
+                <br/>
+                <img src="static/png/DSD-Blue-Logo.png" alt="DSD" class="logo" style="height: 50px;"/>
+                System Analyst at <br/>
+                Draingage Services Department
+            </div>
+        </div>
+        
+        <div class="image-container" onmouseover="showEducation()" onmouseout="hideEducation()">
+            <div class="profile-image">
+                <img src="static/png/kc_1.png" alt="Profile Image">
+            </div>
+            <div class="education" style="display: none;">
+                <img src="static/png/OUHK.png" alt="OUHK" class="logo" style="height: 50px;"/>
+                BSc / MSc IT<br/>
+                <img src="static/png/HKMU.png" alt="HKMU" class="logo" style="width: 100px;"/>
+                MBA<br/>
+                <img src="static/png/UoP.png" alt="UoP" class="logo" style="height: 50px;"/>
+                DBA 1-Yr Student 
+            </div>
+        </div>
+
+        <div class="button-container">
+            <div class="button" id="left-arrow">
+                <div class="arrow">&lt;</div> <!-- Left arrow -->
+            </div>
+            <a class="button" id="right-arrow" href="1/index.html">
+                <div class="arrow">&gt;</div>
+            </a>
+        </div>
+
+        <div class="photo-source">Photo source: macOS Sequoia</div>
+    </div>
+</body>
+</html>
+
+

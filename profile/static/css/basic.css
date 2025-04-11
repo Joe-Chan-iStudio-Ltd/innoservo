@@ -1,0 +1,295 @@
+/* basic.css */
+
+@font-face {
+    font-family: "NueLight";
+    src: url("https://db.onlinewebfonts.com/t/000a4da99ce9507f12d6467738513ede.eot");
+    src: url("https://db.onlinewebfonts.com/t/000a4da99ce9507f12d6467738513ede.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/000a4da99ce9507f12d6467738513ede.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/000a4da99ce9507f12d6467738513ede.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/000a4da99ce9507f12d6467738513ede.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/000a4da99ce9507f12d6467738513ede.svg#NueLight")format("svg");
+}
+
+@font-face {
+    font-family: "FFF Ultra";
+    src: url("https://db.onlinewebfonts.com/t/8684610baea10a063f01a809b20384b5.eot");
+    src: url("https://db.onlinewebfonts.com/t/8684610baea10a063f01a809b20384b5.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/8684610baea10a063f01a809b20384b5.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/8684610baea10a063f01a809b20384b5.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/8684610baea10a063f01a809b20384b5.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/8684610baea10a063f01a809b20384b5.svg#FFF Ultra")format("svg");
+}
+
+@font-face {
+    font-family: "F888 Ultra";
+    src: url("https://db.onlinewebfonts.com/t/9e01275f912bf59b149043c7ff52bb9d.eot");
+    src: url("https://db.onlinewebfonts.com/t/9e01275f912bf59b149043c7ff52bb9d.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/9e01275f912bf59b149043c7ff52bb9d.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/9e01275f912bf59b149043c7ff52bb9d.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/9e01275f912bf59b149043c7ff52bb9d.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/9e01275f912bf59b149043c7ff52bb9d.svg#F888 Ultra")format("svg");
+}
+
+@font-face {
+    font-family: "Cronos Pro Caption";
+    src: url("https://db.onlinewebfonts.com/t/7e29dcdc678124f6e52d4e46a4f89b63.eot");
+    src: url("https://db.onlinewebfonts.com/t/7e29dcdc678124f6e52d4e46a4f89b63.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/7e29dcdc678124f6e52d4e46a4f89b63.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/7e29dcdc678124f6e52d4e46a4f89b63.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/7e29dcdc678124f6e52d4e46a4f89b63.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/7e29dcdc678124f6e52d4e46a4f89b63.svg#Cronos Pro Caption")format("svg");
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #b0b0b0; /* Grey background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes drift {
+    0%, 100% { background-position: 0% 0%; }
+    45% { background-position: 100% 0%; }
+    50% { background-position: 100% 25%; }
+    95% { background-position: 0% 25%; }
+    100% { background-position: 0% 0%; }
+    0%, 100% { animation-timing-function: linear; }
+}
+
+@keyframes zoom {
+    0% {
+        background-position: 30% 50%; 
+        background-size: 150%; /* Start at normal size */
+    }
+    25% {
+        background-position: 0% 40%; 
+        background-size: 200%; /* Zoom in */
+    }
+    50% {
+        background-position: 30`% 30%; 
+        background-size: 250%; /* Zoom in */
+    }
+    75% {
+        background-position: 60% 40%; 
+        background-size: 200%; /* Zoom in */
+    }
+    100% {
+        background-position: 30% 50%; 
+        background-size: 150%; /* Zoom out back to normal */
+    }
+    0%, 100% { animation-timing-function: linear; }
+}
+
+.container {
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+    position: relative;
+    color: white;
+}
+
+.sequoia-sunrise {
+    background: url('../png/Sequoia-Sunrise.png') no-repeat center center / 200%; /* Smaller background */
+    animation: drift 30s infinite; /* 60 seconds of drift + 2 seconds pause */
+}
+
+.sonoma-horizon {
+    background: url('../png/Sonoma Horizon.png') no-repeat center center / 150%; /* Smaller background */
+    animation: zoom 60s infinite; /* 10 seconds for zoom in and out */    
+}
+
+.big-sur {
+    background: url('../png/big_sur.png') no-repeat center center / 150%; /* Smaller background */
+    animation: zoom 60s infinite; /* 10 seconds for zoom in and out */
+}
+
+.catalina-day {
+    background: url('../png/catalina_day.png') no-repeat center center / 150%; /* Smaller background */
+    animation: zoom 60s infinite; /* 10 seconds for zoom in and out */
+}
+
+.catalina-night {
+    background: url('../png/catalina_night.png') no-repeat center center / 150%; /* Smaller background */
+    animation: zoom 60s infinite; /* 10 seconds for zoom in and out */
+}
+
+.name-container {
+    align-items: center;
+}
+
+.heading-container {
+    width: 100vw;
+    align-items: center;
+    text-align: center; /* Center the heading */
+    display: flex;
+    z-index: 1; /* Ensure the name is on top */
+    margin-bottom: 20px;
+}
+
+.name {
+    font-family: 'F888 Ultra', sans-serif; /* Use custom font */
+    font-size: 100px;
+    font-weight: 900; /* Bold weight */
+    position: absolute;
+    top: calc(50% - 100px);
+    left: 20px;
+    z-index: 1; /* Ensure the name is on top */
+    max-height: 100vh;
+    overflow: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.name:hover {
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.experience {
+    font-family: 'F888 Ultra', sans-serif; /* Use custom font */
+    font-size: 50px;
+    font-weight: 300; /* Light weight */
+    position: absolute;
+    top: calc(50% - 125px);
+    left: 20px;
+    z-index: 1; /* Ensure the name is on top */
+    overflow: hidden;
+}
+
+.white-logo {
+    width: 50px; /* Adjust size as needed */
+    vertical-align: middle; /* Aligns logo with text */
+    margin-top: -10px; /* Space between logo and text */
+    margin-right: 10px; /* Space between logo and text */
+    filter: invert(1); /* Change black logo to white */
+}
+
+.logo {
+    height: 50px; /* Adjust size as needed */
+    margin-top: -10px; /* Space between logo and text */
+    vertical-align: middle; /* Aligns logo with text */
+}
+
+.image-container {
+    right: 0px;
+    z-index: 1; /* Ensure the image is on top */
+}
+
+.profile-image {
+    position: absolute;
+    right: 0px;
+    bottom: -7px;
+    width: 30%;
+    overflow: hidden;
+    border-radius: 50px;
+    z-index: 1; /* Ensure the image is on top */
+}
+
+.profile-image:hover img {
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.image-container img {
+    width: auto;
+    height: auto;
+    max-height: 80vh;
+}
+
+.image-container:hover img {
+    filter: brightness(1); /* Varnish effect */
+}
+
+.education {
+    font-family: 'F888 Ultra', sans-serif; /* Use custom font */
+    font-size: 50px;
+    font-weight: 300; /* Light weight */
+    position: absolute;
+    right: 0px;
+    margin-right: 20px;
+    top: calc(50% - 75px);
+    z-index: 1; /* Ensure the name is on top */
+    overflow: hidden;
+    text-align: right;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px; /* Space between buttons */
+}
+
+.button {
+    text-decoration: none; /* Remove underline */
+    display: inline-flex; /* Align items properly */
+    justify-content: center;
+    align-items: center;
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 50%; /* Make it circular */
+    background-color: black; /* Background color */
+    opacity: 0.5; /* Initial opacity */
+    transition: opacity 0.3s; /* Smooth transition */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.button:hover {
+    opacity: 1; /* Solid on hover */
+}
+
+.arrow {
+    font-family: 'NueLight', sans-serif; /* Use custom font */
+    color: white;
+    font-size: 300px; /* Adjust size as needed */
+    bottom: -20px; 
+    left: 12px;           
+    position: relative;
+}        
+
+.photo-source {
+    font-family: 'Cronos Pro Caption', sans-serif; /* Use custom font */
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 14px; /* Adjust size as needed */
+    opacity: 0.7; /* Slightly transparent */
+    z-index: 1; /* Ensure it’s on top */
+}
+
+.heading {
+    font-family: 'F888 Ultra', sans-serif; /* Use custom font */
+    font-size: 160px;
+    font-weight: 900; /* Bold weight */
+    top: 20px;
+    overflow: hidden;
+    align-items: center;
+    transition: opacity 0.3s ease;
+    width: 80vw;
+    margin-top: 80px; /* Space below the heading */
+    margin-bottom: 80px; /* Space below the heading */
+}
+
+.contact-table {
+    width: 60vw;
+    margin: 0 auto; /* Center the table */
+    border-collapse: collapse; /* Remove gaps between cells */
+}
+
+.contact-table td {
+    font-family: 'Cronos Pro Caption', sans-serif; /* Use custom font */
+    font-size: 30px; /* Adjust size as needed */
+    text-align: left; /* Align text to the left */
+    height: 100px;
+}
+
+.logo {
+    height: 50px; /* Adjust logo size */
+    width: auto; /* Maintain aspect ratio */
+}

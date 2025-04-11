@@ -1,0 +1,122 @@
+/* basic.css */
+
+@font-face {
+    font-family: "NueLight";
+    src: url("https://db.onlinewebfonts.com/t/000a4da99ce9507f12d6467738513ede.eot");
+    src: url("https://db.onlinewebfonts.com/t/000a4da99ce9507f12d6467738513ede.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/000a4da99ce9507f12d6467738513ede.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/000a4da99ce9507f12d6467738513ede.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/000a4da99ce9507f12d6467738513ede.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/000a4da99ce9507f12d6467738513ede.svg#NueLight")format("svg");
+}
+
+@font-face {
+    font-family: "FFF Ultra";
+    src: url("https://db.onlinewebfonts.com/t/8684610baea10a063f01a809b20384b5.eot");
+    src: url("https://db.onlinewebfonts.com/t/8684610baea10a063f01a809b20384b5.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/8684610baea10a063f01a809b20384b5.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/8684610baea10a063f01a809b20384b5.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/8684610baea10a063f01a809b20384b5.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/8684610baea10a063f01a809b20384b5.svg#FFF Ultra")format("svg");
+}
+
+@font-face {
+    font-family: "F888 Ultra";
+    src: url("https://db.onlinewebfonts.com/t/9e01275f912bf59b149043c7ff52bb9d.eot");
+    src: url("https://db.onlinewebfonts.com/t/9e01275f912bf59b149043c7ff52bb9d.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/9e01275f912bf59b149043c7ff52bb9d.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/9e01275f912bf59b149043c7ff52bb9d.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/9e01275f912bf59b149043c7ff52bb9d.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/9e01275f912bf59b149043c7ff52bb9d.svg#F888 Ultra")format("svg");
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #b0b0b0; /* Grey background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes drift {
+    0%, 100% { background-position: 0% 0%; }
+    50% { background-position: 100% 0%; }
+    0%, 50% { animation-timing-function: linear; }
+    50%, 100% { animation-timing-function: steps(1); }
+}
+
+.container {
+    /* Alternatively, use a gradient: */
+    /* background: linear-gradient(135deg, #4e54c8, #8f94fb); */
+    background: url('Sequoia-Sunrise.png') no-repeat center center / 150%; /* Smaller background */
+    animation: drift 62s infinite; /* 60 seconds of drift + 2 seconds pause */
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+    position: relative;
+    color: white;
+}
+
+.name {
+    font-family: 'F888 Ultra', sans-serif; /* Use custom font */
+    font-size: 100px;
+    font-weight: 900; /* Bold weight */
+    position: absolute;
+    top: calc(50% - 100px);
+    left: 20px;
+    z-index: 1; /* Ensure the name is on top */
+}
+
+.image-container {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 30%;
+    overflow: hidden;
+    border-radius: 50px;
+    z-index: 1; /* Ensure the image is on top */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+
+.button-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px; /* Space between buttons */
+}
+
+.button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5; /* Initial opacity */
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 1; /* Solid on hover */
+}
+
+.arrow {
+    font-family: 'NueLight', sans-serif; /* Use custom font */
+    color: white;
+    font-size: 300px; /* Adjust size as needed */
+    bottom: -20px; 
+    left: 12px;           
+    position: relative;
+}        

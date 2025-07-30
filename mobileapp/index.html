@@ -1,14 +1,46 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iStaff</title>
+    <title>Mobile App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .install-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .install-button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <a href="itms-services://?action=download-manifest&amp;url=https://dsdweb02.dsd.hksarg/mobileapp/DSDInfo/1.1.1/manifest.plist">DSDInfo 1.1.1</a>
+
+    <h1>Mobile App</h1>
+    <p>To ensure secure connections, please install the root certificate.</p>
+    <a href="https://www.innoservo.com/mobileapp/root/dsdca01.crt" download="dsdca01.crt" class="install-button">Root Certificate</a>
     <br />
-    <a href="itms-services://?action=download-manifest&amp;url=https://dsdweb02.dsd.hksarg/mobileapp/HIS/1.18.8/manifest.plist">HIS 1.18.8</a>
     <br />
-    <a href="itms-services://?action=download-manifest&amp;url=https://dsdweb02.dsd.hksarg/mobileapp/iStaff/1.0.0/manifest.plist">iStaff 1.0.0</a>
+    <p>To install mobile app.</p>
+    <a href="itms-services://?action=download-manifest&amp;url=https://www.innoservo.com/mobileapp/DSDInfo/1.1.1/manifest.plist" download class="install-button">DSDInfo 1.1.1</a>
+    <br />
+    <br />
+    <a href="itms-services://?action=download-manifest&amp;url=https://www.innoservo.com/mobileapp/HIS/1.18.8/manifest.plist" download class="install-button">HIS 1.18.8</a>
+    <br />
+    <br />
+    <a href="itms-services://?action=download-manifest&amp;url=https://www.innoservo.com/mobileapp/iStaff/1.0.0/manifest.plist" download class="install-button">iStaff 1.0.0</a>
 </body>
 </html>

@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /2025/
 Disallow: /profile/
-Disallow: /iStaff/
+Disallow: /mobileapp/

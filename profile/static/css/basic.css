@@ -95,27 +95,27 @@ body {
 
 .sequoia-sunrise {
     background: url('../jpg/Sequoia-Sunrise.jpg') no-repeat center center / 200%; /* Smaller background */
-    animation: drift 30s infinite; /* 60 seconds of drift + 2 seconds pause */
+    animation: drift 180s infinite; /* 60 seconds of drift + 2 seconds pause */
 }
 
 .sonoma-horizon {
     background: url('../jpg/Sonoma Horizon.jpg') no-repeat center center / 150%; /* Smaller background */
-    animation: zoom 60s infinite; /* 10 seconds for zoom in and out */    
+    animation: zoom 180s infinite; /* 10 seconds for zoom in and out */    
 }
 
 .big-sur {
     background: url('../jpg/big_sur.jpg') no-repeat center center / 150%; /* Smaller background */
-    animation: zoom 60s infinite; /* 10 seconds for zoom in and out */
+    animation: zoom 180s infinite; /* 10 seconds for zoom in and out */
 }
 
 .catalina-day {
     background: url('../jpg/catalina_day.jpg') no-repeat center center / 150%; /* Smaller background */
-    animation: zoom 60s infinite; /* 10 seconds for zoom in and out */
+    animation: zoom 180s infinite; /* 10 seconds for zoom in and out */
 }
 
 .catalina-night {
     background: url('../jpg/catalina_night.jpg') no-repeat center center / 150%; /* Smaller background */
-    animation: zoom 60s infinite; /* 10 seconds for zoom in and out */
+    animation: zoom 180s infinite; /* 10 seconds for zoom in and out */
 }
 
 .name-container {

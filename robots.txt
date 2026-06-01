@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /2025/
+Disallow: /2026/
 Disallow: /profile/
 Disallow: /mobileapp/

@@ -3,28 +3,21 @@
   
   <url>
     <loc>https://www.innoservo.com/</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
 
   <url>
-    <loc>https://www.innoservo.com/index.html</loc>
-    <lastmod>2026-06-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://www.innoservo.com/dsd/index.html</loc>
-    <lastmod>2026-06-03</lastmod>
+    <loc>https://www.innoservo.com/dsd/</loc>
+    <lastmod>2026-06-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.00</priority>
   </url>
 
   <url>
-    <loc>https://www.innoservo.com/r/index.html</loc>
-    <lastmod>2026-06-03</lastmod>
+    <loc>https://www.innoservo.com/r/</loc>
+    <lastmod>2026-06-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.00</priority>
   </url>
